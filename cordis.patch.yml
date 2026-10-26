@@ -1,3 +1,15 @@
+# dsh-weight-panel bundle patch
+#
+# 这是这个插件的「挂载声明」：DSH 启动时按 bundle 层叠加各插件的 patch，
+# 本文件往配置树里插入一行 weight-panel，Host 侧的 lib/index.js 因此被加载，
+# 客户端侧再由包里的 lib/client.js 注册侧边栏图标与面板。
+#
+# 安装（二选一）：
+#   A. 让 DSH 的 plugin_manager 安装本目录：install_bundle(target = 这个包的绝对路径)
+#   B. 手动把同一行写进 profile 的 cordis.patch.yml，并把包名加进
+#      package.json 的 dsh.profile.bundles
+#
+# config 为空：这个插件没有可配置项，所有设置都在面板界面里填。
 - insert:
     - id: weight-panel
       name: 'dsh-weight-panel'

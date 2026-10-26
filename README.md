@@ -1,5 +1,23 @@
 # DSH Weight Panel
 
+**中文版 / Chinese:** [README_CN.md](./README_CN.md)
+
+## Why I built this
+
+> Skip this section if you only want installation and usage.
+
+I built this for my own weight-loss plan.
+
+My body-fat scale reports a pile of numbers — body-fat percentage, water, muscle mass, visceral fat
+level — and they arrive scattered across the scale's app, in no shape to hand to an assistant. (An
+app I tried before was good, but it would not talk to my scale, so the data never got in.) I want the
+agent to see my actual body data *before* it recommends anything, so this plugin does the one thing
+that was missing: a place to type those numbers in, with the trend math done for you.
+
+Today it records and computes; it does not advise. The obvious gap is **calorie intake** —
+estimating calories from a photo is hand-wavy, and nobody carries a kitchen scale to a school
+canteen. That part is unsolved on purpose, not by oversight.
+
 A sidebar panel plugin for [DSH (DeepSeek Harness)](https://github.com/deepseek-ai) that logs daily
 weight, waist, steps and training minutes, and shows the trend against a weight goal.
 
